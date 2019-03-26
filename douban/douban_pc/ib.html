@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>"inline-clock"</title>
+    <style>
+    .box{
+        width: 950px;
+        margin: 0 auto;
+    }
+    .col-4,.col-8{
+        height: 200px;
+        background-color: green;
+        display: inline-block;
+    }
+    .col-4{
+        background-color: red;
+        width: 40%;
+    }
+    .col-8{
+        background-color: green;
+        width: 60%;
+    }
+    </style>
+</head>
+<body>
+    <div class="box">
+    <!--这种写法会让浏览器读取到分隔符(空格)，换行符，导致宽度总和为1但是不同行排布
+         <div class="col-4"></div>
+         <div class="col-8"></div> 
+    -->
+        <div class="col-4"></div><div class="col-8"></div>
+    </div>
+    
+</body>
+</html>
