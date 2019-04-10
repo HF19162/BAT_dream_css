@@ -2,8 +2,7 @@
     margin: 0;padding: 0;
   }
   header {
-    background: 
-    url(./images/mount.png) no-repeat;
+    background:url(./images/mount.png) no-repeat;
     background-size: 100%;
   }
   header .mask {
@@ -70,6 +69,7 @@
     text-indent: 22px;
     background-color: rgba(0, 0, 0, 0);
   }
+  
   .create .input input[type="button"] {
     width: 125px;
     background-color: #fff;
