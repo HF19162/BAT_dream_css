@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>物理引擎</title>
+  <script src="https://cdn.bootcss.com/phaser/2.6.2/phaser.min.js"></script>
+  <script src="http://examples.phaser.io/_site/phaser/phaser.2.2.2.box2d.min.js"></script>
+</head>
+<body>
+  <div id="game"></div>
+  <script>
+  var game = new Phaser.Game(800, 600, Phaser.CANVAS, 'phaser-example', {
+    preload: preload,
+    create:create
+  });
+
+  function preload () {
+    // 任何游戏都要预加载资源， 
+    game.load.image('block', './block.png');
+  }
+  function create() {
+    game.stage.backgroundColor = '#124184';
+  }
+
+  </script>
+</body>
+</html>
