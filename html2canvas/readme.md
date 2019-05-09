@@ -8,3 +8,8 @@ html2canvas(dom,{
 
 - svg是图片
 假如它能将dom画在内部的话
+foreignObject 
+svg => html
+
+- window.getComputedStyle(dom,null)
+任何节点的css的属性值都能拿到。
